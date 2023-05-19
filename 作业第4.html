@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url('pedestrian.jpeg');
+        background-repeat: round;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: auto;
+        box-sizing: border-box;
+    }
+    input[type=text]{
+        width: 100px;
+        height: 30px;
+        margin: auto;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 10px;
+        background-image: url('搜索.png');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+        background-color: white;
+        padding: 14px 300px 10px 70px;
+        transition: width 0.3s ease-in-out;
+    }
+    input[type=text]:focus{
+        width: 500px;
+        border: 2px #f1f1f1;
+    }
+    form{
+        width:100%;
+        padding: 100px 0;
+        text-align: center;
+        position: absolute;
+    }
+    p{
+        font-size: 20px;
+        border:2px solid white;
+        border-radius: 10px;
+        background-color: white;
+        text-align: center;
+        height: 25px;
+        width: 60px;
+        margin: auto;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0%;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 150%;
+    }
+    li{
+        float: left;
+    }
+    li a{
+        display: block;
+        padding: 27px 5px;
+        text-align: left;
+        text-decoration: none;
+        color: gray;
+        background-color: transparent;
+        font-size: 15px;
+    }
+    li img{
+        width: 140px;
+        height: 70px;
+    }  
+    .dropbpn{
+        color: grey;
+        padding:25px 5px;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        background-color: transparent;
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        min-width: 150px;
+        background-color: white;
+        z-index: 1;
+    }
+    .dropdown-content a{
+        color: black;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+    .dropdown-content a:hover{
+        color: gray;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+</style>
+<body>
+    <form action="">
+        <input type="text">
+        <p>search</p>
+    </form>
+    <div class="dropdown">
+        <ul>
+            <li><img src="必应.png" alt=""></li>
+            <li><a href="#">picture</a></li>
+            <li><a href="#">video</a></li>
+            <li><button class="dropbpn">more</button>
+                <div class="dropdown-content">
+                    <a href="#">map</a>
+                    <a href="#">news</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+   
+</body>
+</html>
